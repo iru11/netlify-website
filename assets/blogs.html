@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.bgimg {
+  background-image: url('https://www.skillshare.com/blog/wp-content/uploads/2022/05/Untitled-9.png');
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 25px;
+}
+  
+
+.topleft {
+  position: absolute;
+  text-align: center;
+  align-items: center;
+  top: 0;
+  /* left: 16px; */
+
+}
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 16px;
+}
+
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+  text-align: center;
+  animation: blinker 1.0s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+  }
+  @keyframes blinker { to { opacity: 0; } }
+
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+.skills {
+  margin: auto;
+  display: flex;
+  width: 250px;
+  flex-wrap: wrap;
+  border: 1px solid rgb(0, 0, 0)  ;
+  box-shadow: 5px 5px goldenrod;
+  background-color: goldenrod;
+  padding: 10px 10px;
+  margin: 10px;
+  justify-content: space-between;
+    text-align: center;
+  color: black;
+	font-style: italic;
+	font-size: 20px;
+  animation: blinker 1.7s cubic-bezier(.5, 0, 1, 1) infinite alternate;  
+  }
+  @keyframes blinker { to { opacity: 0; } }
+
+.ins:hover {
+  transform: scale(1.5);
+  
+}
+.twi:hover {
+
+  transform: scale(1.5);
+}
+
+.git:hover {
+
+  transform: scale(1.5);
+}
+
+.lin:hover {
+
+  transform: scale(1.5);
+}
+
+
+</style>
+
+<body>
+
+<div class="bgimg">
+
+  <div class="middle">
+
+    <div class="Home"> 
+        <a href="/website/index.html"title="Image from freepnglogos.com"><img src="/pics/bit.png"  alt="who is using twitter png logo" /></a>
+    </div>  
+    <h1>COMING SOON</h1>
+    <hr>
+    <p id="demo" style="font-size:30px"></p>
+  </div>
+  <div class="bottomleft">
+    <div class="skills">
+        <div class="twi"> ●
+            <a href="https://twitter.com/iruirfan54" target="_blank"title="Image from freepnglogos.com"><img src="/pics/twitter.png"   height="30" width="30" alt="who is using twitter png logo" /></a>
+        </div>  
+        <div class="ins"> ●
+            <a href="https://www.instagram.com/cybertom_/" target="_blank" title="cybertom"><img src="/pics/insta.png"  height="30"  width="30" alt="instagram logo png transparent background hd" /></a>
+        </div>
+        <div class="git"> ●
+            <a href="https://github.com/iru11" target="_blank" title="iru11"><img src="/pics/git"  height="30"  width="30" alt="512x512 transparent logo, github logo" /></a>
+        </div> 
+        <div class="lin"> ●
+            <a href="https://www.linkedin.com/in/irfannayeem-cyber/" target="_blank" title="Irfan Nayeem"><img src="/pics/link.png"  height="30"  width="30" alt="whatsapp logo light green png" /> </a>
+        </div>
+            
+        
+        
+    </div>	
+  </div>
+</div>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 1, 2022 15:37:25").getTime();
+
+// Update the count down every 1 second
+var countdownfunction = setInterval(function() {
+
+  // Get todays date and time
+  var now = new Date().getTime();
+  
+  // Find the distance between now an the count down date
+  var distance = countDownDate - now;
+  
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+  
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(countdownfunction);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+
+</body>
+</html>
