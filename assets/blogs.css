@@ -210,7 +210,7 @@ body {
     -webkit-transform: translateZ(0); backface-visibility: hidden;
   scale:(1.0, 1.0);
     transform: translateZ(0);
-  background:#ffffff url(pics/cover.jpg) 50% 0 no-repeat;
+  background:#ffffff url(/pics/cover.jpg) 50% 0 no-repeat;
   background-size:100%;
   background-attachment:fixed;
   animation: grow 360s  linear 10ms infinite;
