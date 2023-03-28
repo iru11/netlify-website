@@ -362,7 +362,7 @@ section {
   display: block;
   width: 120px;
   height: 1px;
-  /* background: #ddd; */
+  background: #ddd;
   bottom: 1px;
   left: calc(50% - 60px);
 }
