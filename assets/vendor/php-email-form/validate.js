@@ -70,7 +70,7 @@
 
   function displayError(thisForm, error) {
     thisForm.querySelector('.loading').classList.remove('d-block');
-    thisForm.querySelector('.error-message').innerHTML = 'This Message has been sent, Thank You!';
+    thisForm.querySelector('.error-message').innerHTML = 'This Message has been sent, Thank You! ';
     thisForm.querySelector('.error-message').classList.add('d-block');
   }
 
