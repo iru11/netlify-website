@@ -1092,10 +1092,10 @@ section {
 .contact .php-email-form .error-message {
   display: none;
   color: #fff;
-  background: #ed3c0d;
-  text-align: left;
+  background: #0563bb;
+  text-align: center;
   padding: 15px;
-  font-weight: 600;
+  font-weight: 30;
 }
 
 .contact .php-email-form .error-message br+br {
